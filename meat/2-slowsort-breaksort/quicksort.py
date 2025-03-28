@@ -34,4 +34,4 @@ quicksort(arr)
 
 # OUTPUT
 # Returns index
-print(arr)
+print(*arr)
