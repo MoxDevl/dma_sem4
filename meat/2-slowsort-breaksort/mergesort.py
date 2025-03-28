@@ -1,5 +1,5 @@
 # O(n) memory mergesort
-def mergesort(arr : list, left : int = 0, right : int = None, buf : list = None, counter = 0) -> None:
+def mergesort(arr : list, left : int = 0, right : int = None, buf : list = None) -> None:
 
     if right is None:
         right = len(arr)-1
@@ -11,8 +11,8 @@ def mergesort(arr : list, left : int = 0, right : int = None, buf : list = None,
         return
 
     middle = (left+right)//2
-    mergesort(arr, left, middle, buf, counter+1)
-    mergesort(arr, middle+1, right, buf, counter+1)
+    mergesort(arr, left, middle, buf)
+    mergesort(arr, middle+1, right, buf)
 
     ind1 = ind2 = 0    
     for i in range(left, right+1):
