@@ -13,7 +13,7 @@ def peak(arr : list) -> int:
     return end if arr[start] <= arr[end] else start
 
 # INPUT
-# n - length of array
+# n - length of an array
 n = input()
 # inputing the array
 arr = [float(x) for x in input().split()]

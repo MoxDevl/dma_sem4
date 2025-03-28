@@ -17,7 +17,7 @@ def lower_bound(arr : list, boy : int) -> int:
 
 
 # INPUT
-# n - length of array
+# n - length of an array
 # x - key for lower_bound()
 n, x = input().split()
 # inputing the array

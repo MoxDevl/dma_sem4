@@ -15,8 +15,8 @@ def nearest_element(arr : list, boy : int) -> int:
 
 
 # INPUT
-# n - length of array
-# x - key for lower_bound()
+# n - length of an array
+# x - key for nearest_element()
 n, x = input().split()
 # inputing the array
 arr = [float(x) for x in input().split()]
